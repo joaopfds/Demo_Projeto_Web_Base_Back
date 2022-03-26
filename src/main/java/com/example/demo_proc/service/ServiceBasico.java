@@ -1,5 +1,8 @@
 package com.example.demo_proc.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.stereotype.Service;
@@ -17,7 +20,15 @@ public class ServiceBasico {
 		res.setColuna_nova(req.getColuna()+1);
 		res.setLinha_nova(req.getLinha()+1);
 		res.setUmBool_novo(!req.getUmBool());
+		res.setTeste_novo(req.getTeste());
 		
+		List<String> teste = new ArrayList<String>();
+		teste.add("teste1");
+		teste.add("teste2");
+		teste.add("teste3");
+		
+		res.setTeste_2(teste);
+
 		if (res.getColuna_nova() == 1001) {
 			throw new Exception("Error") ;
 		}

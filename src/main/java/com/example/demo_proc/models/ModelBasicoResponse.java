@@ -1,6 +1,7 @@
 package com.example.demo_proc.models;
 
 import java.io.Serializable;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,4 +21,9 @@ public class ModelBasicoResponse implements Serializable {
 	private Integer coluna_nova;
 	
 	private Boolean umBool_novo;
+	
+	private List<String> teste_novo;
+	
+	private List<String> teste_2;
+
 }

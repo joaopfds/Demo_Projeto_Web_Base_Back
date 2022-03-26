@@ -1,6 +1,7 @@
 package com.example.demo_proc.models;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
@@ -27,4 +28,6 @@ public class ModelBasicoRequest implements Serializable {
 	@NotBlank
 	@NotNull
 	private Boolean umBool;
+	
+	private List<String> teste;
 }
