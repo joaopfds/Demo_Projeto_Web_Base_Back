@@ -16,14 +16,14 @@ public class ModelBasicoResponse implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	private Integer linha_nova;
+	//private Integer linha_nova;
 	
-	private Integer coluna_nova;
+	//private Integer coluna_nova;
 	
-	private Boolean umBool_novo;
+	//private Boolean umBool_novo;
 	
-	private List<String> teste_novo;
+	//private List<String> teste_novo;
 	
-	private List<String> teste_2;
+	private List<Integer> Retorno;
 
 }
