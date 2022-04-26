@@ -19,15 +19,20 @@ public class ModelBasicoRequest implements Serializable {
 	
 	@NotBlank
 	@NotNull
-	private Integer linha;
+	private String Divida;
 	
 	@NotBlank
 	@NotNull
-	private Integer coluna;
+	private String Garantia;
 	
 	@NotBlank
 	@NotNull
-	private Boolean umBool;
+	private String Historia;
 	
-	private List<String> teste;
+	@NotBlank
+	@NotNull
+	private String Renda;
+	
+	
+	//private List<String> teste;
 }
