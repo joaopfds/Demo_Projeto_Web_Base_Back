@@ -17,7 +17,7 @@ public class ServiceBasico {
 
 	public ModelBasicoResponse processa(@Valid ModelBasicoRequest req) throws Exception {
 		ModelBasicoResponse res = new ModelBasicoResponse();
-		res.setColuna_nova(req.getColuna()+1);
+		/*res.setColuna_nova(req.getColuna()+1);
 		res.setLinha_nova(req.getLinha()+1);
 		res.setUmBool_novo(!req.getUmBool());
 		res.setTeste_novo(req.getTeste());
@@ -25,7 +25,7 @@ public class ServiceBasico {
 		List<String> teste = new ArrayList<String>();
 		teste.add("teste1");
 		teste.add("teste2");
-		teste.add("teste3");
+		teste.add("teste3");*/
 		
 		res.setTeste_2(teste);
 
