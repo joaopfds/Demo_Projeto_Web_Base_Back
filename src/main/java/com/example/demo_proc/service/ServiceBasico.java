@@ -20,14 +20,14 @@ public class ServiceBasico {
 		/*res.setColuna_nova(req.getColuna()+1);
 		res.setLinha_nova(req.getLinha()+1);
 		res.setUmBool_novo(!req.getUmBool());
-		res.setTeste_novo(req.getTeste());
+		res.setTeste_novo(req.getTeste());*/
 		
 		List<String> teste = new ArrayList<String>();
 		teste.add("teste1");
 		teste.add("teste2");
-		teste.add("teste3");*/
+		teste.add("teste3");
 		
-		res.setTeste_2(teste);
+		res.predizer(teste);
 
 		if (res.getColuna_nova() == 1001) {
 			throw new Exception("Error") ;
