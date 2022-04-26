@@ -21,7 +21,7 @@ public class CtrlBasico {
 	@Autowired
 	private ServiceBasico service;
 
-	@PostMapping(value = "/v1/processar", produces = { "application/json", "application/xml" }, consumes ={ "application/json", "application/xml" })
+	@PostMapping(value = "/v1/predizer", produces = { "application/json", "application/xml" }, consumes ={ "application/json", "application/xml" })
 	public ResponseEntity<ModelBasicoResponse> metodoPostProcessa(@Valid @RequestBody ModelBasicoRequest req) throws Exception {
 		ModelBasicoResponse res = service.processa(req);
 		return ResponseEntity.ok(res);
